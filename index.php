@@ -30,5 +30,13 @@
 	foreach ($birth as $a => $b) {
 		echo "<br> $a --> $b <br>";
 	}?>
+	<?php function myfunc(){
+		static $count = 0;
+		$count++;
+		echo $count;
+	}
+	for($i=0; $i<5; $i++){
+		myfunc();
+	}?>
 </body>
 </html>
