@@ -22,5 +22,13 @@
 	<?php $i=0; do{ 
 		echo $i;
 	}while($i++<10)?>
+	<?php 
+		$birth=[
+		"petro"=>"322",
+		"andriy"=>"233"
+	];
+	foreach ($birth as $a => $b) {
+		echo "<br> $a --> $b <br>";
+	}?>
 </body>
 </html>
