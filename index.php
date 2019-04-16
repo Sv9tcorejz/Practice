@@ -5,16 +5,17 @@
 	<title>Document</title>
 </head>
 <body>
-	<?php echo "Hello World!"; ?>
-	<?php $dat = date("d.m.y"); echo "$dat"; ?>
-	<?php
-	for ($i=1; $i<=5; $i++){
-		echo(pow($i,2));
-	}
-	?>
-	<?php $a = 5; echo gettype($a); ?>
+	<?php echo "Hello World!";?>
+	<?php $dat = date("d.m.y"); echo "$dat";?>
+	<?php for ($i=1; $i<=5; $i++){echo(pow($i,2));}?>
+	<?php $a = 5; echo gettype($a);?>
 	<?php $b = 3; if(isset($b)){ echo "$b"; }?>
-	<?php define("c",1); echo c; ?>
+	<?php define("c",1); echo c;?>
 	<!--php x = (if)? true(): false() -->
+	<?php $d = 11; 
+		if($d == 10){
+		echo "<br> d = 10";}
+		else if($d < 10){echo "<br> d<10";}
+		else {echo "<br> d > 10";}?>
 </body>
 </html>
