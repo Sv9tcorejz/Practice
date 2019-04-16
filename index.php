@@ -12,5 +12,6 @@
 		echo(pow($i,2));
 	}
 	?>
+	<?php $a = 5; echo gettype($a); ?>
 </body>
 </html>
