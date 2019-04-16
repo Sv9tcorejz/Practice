@@ -5,6 +5,9 @@
 	<title>Document</title>
 </head>
 <body>
-	<?php echo "Hello World!"; ?>
+	<?php echo "Hello World!"; 
+	$dat = date("d.m.y");
+	echo "$dat";
+	?>
 </body>
 </html>
