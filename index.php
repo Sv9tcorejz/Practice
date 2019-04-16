@@ -16,6 +16,8 @@
 		if($d == 10){
 		echo "<br> d = 10";}
 		else if($d < 10){echo "<br> d<10";}
-		else {echo "<br> d > 10";}?>
+		else {echo "<br> d > 10 <br>";}?>
+	<?php $i=0; while($i<10){
+	echo $i += 1;}?>
 </body>
 </html>
