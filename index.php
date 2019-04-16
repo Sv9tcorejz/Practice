@@ -15,5 +15,6 @@
 	<?php $a = 5; echo gettype($a); ?>
 	<?php $b = 3; if(isset($b)){ echo "$b"; }?>
 	<?php define("c",1); echo c; ?>
+	<!--php x = (if)? true(): false() -->
 </body>
 </html>
