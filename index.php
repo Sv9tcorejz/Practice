@@ -13,5 +13,6 @@
 	}
 	?>
 	<?php $a = 5; echo gettype($a); ?>
+	<?php $b = 3; if(isset($b)){ echo "$b"; }?>
 </body>
 </html>
