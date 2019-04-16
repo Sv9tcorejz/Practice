@@ -38,5 +38,12 @@
 	for($i=0; $i<5; $i++){
 		myfunc();
 	}?>
+	<form method="post">
+		<div><p>Ваше ім'я: <input type="text" name="name"></p></div>
+		<div><p>Скільки років: <input type="text" name="age"></p></div>
+		<div><input type="submit"></div>
+	</form>
+	<div>Привіт,<?php echo htmlspecialchars($_POST['name']);?></div>
+	<div>Вам<?php echo (int)($_POST['age']);?>років</div>
 </body>
 </html>
