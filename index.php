@@ -48,5 +48,26 @@
 	<?php if(preg_match("/petro/i", "Oleg andriy"))
 	{ echo "success";} 
 	else { echo "Not found";}?>
+	
+	<?php class Example{
+		
+		public $name;
+		public $surname;
+		public $age;
+		public $city;
+
+		function __construct($name,$surname,$age,$city){
+			$this->name = $name;
+			$this->surname = $surname;
+			$this->age = $age;
+			$this->city = $city;
+		}
+
+		function getInfo(){
+			return "{$this->name}"."{$this->surname}"."{$this->age}"."{$this->city}";
+		}
+	}
+	$user1 = new Example("Svyatoslav","Govda","19","Lviv");
+	echo $user1->getInfo();?>
 </body>
 </html>
