@@ -45,5 +45,8 @@
 	</form>
 	<div>Привіт,<?php echo htmlspecialchars($_POST['name']);?></div>
 	<div>Вам<?php echo (int)($_POST['age']);?>років</div>
+	<?php if(preg_match("/petro/i", "Oleg andriy"))
+	{ echo "success";} 
+	else { echo "Not found";}?>
 </body>
 </html>
