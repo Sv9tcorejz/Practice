@@ -79,5 +79,16 @@
 			}
 		}
 	$obj = new constdestr;?>
+	<?php class selfthis{
+		private static $name;
+		public static function setName($a){
+			self::$name = $a;
+		}
+		public static function getName(){
+			return self::$name;
+		}
+	}
+	selfthis::setName('oleg');
+	echo selfthis::getName();?>
 </body>
 </html>
