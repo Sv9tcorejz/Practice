@@ -69,5 +69,15 @@
 	}
 	$user1 = new Example("Svyatoslav","Govda","19","Lviv");
 	echo $user1->getInfo();?>
+	<?php class constdestr{
+			function __construct(){
+				echo "Конструктор";
+				$this->field = "constdestr";
+			}
+			function __destruct(){
+				echo "del[]".$this->field;
+			}
+		}
+	$obj = new constdestr;?>
 </body>
 </html>
